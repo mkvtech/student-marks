@@ -1,0 +1,46 @@
+#new-mark-form {
+    max-width: 500px;
+    margin: auto;
+
+    padding: 20px;
+}
+
+.form-row {
+    padding: 10px 0;
+}
+
+#new-mark-form > .form-row > label {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+}
+
+#new-mark-form > .form-row > input {
+    width: auto;
+}
+
+input[type="submit"] {
+    width: 160px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #3498DB;
+    border: none;
+    font-family: 'Roboto';
+    font-size: 20px;
+    color: var(--text-color-white);
+    padding: 0;
+    margin: 0;
+}
+
+hr {
+    border-top: 1px solid #808B96;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    margin: 20px 0;
+}
+
+.center-list {
+    display: flex;
+    justify-content: center;
+}

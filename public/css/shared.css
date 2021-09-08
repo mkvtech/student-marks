@@ -1,0 +1,27 @@
+:root {
+    --text-color-black: #17202A;
+    --text-color-white: #f0f0f0;
+
+    background-color: #EBEDEF;
+    font-family: 'Roboto';
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 72px;
+    color: var(--text-color-black);
+    text-align: center;
+}
+
+.align-center {
+    text-align: center;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <!-- Google Fonts: Roboto, Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/shared.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/navbar.css">
+
+    <!-- JS -->
+    <script src="js/form.js"></script>
+</head>
+<body>
+    <div id="navbar">
+        <div class="navbar-item navbar-brand">
+            Studentų Įvertinimai
+        </div>
+        <div class="navbar-item navbar-hoverable">
+            <a class="navbar-link" href="/form">Naujas įvertinimas</a>
+        </div>
+        <div class="navbar-item navbar-hoverable">
+            <a class="navbar-link" href="/table">Visi įvertinimai</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Naujas įvertinimas</h1>
+        <p class="align-center">Įveskite naują pažymį:</p>
+
+        <form id="new-mark-form" action="/marks/" method="post">
+            <div class="form-row">
+                <label for="name">Vardas, Pavardė:</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+
+            <div class="form-row">
+                <label for="course">Kursas</label>
+                <input type="text" name="course" id="course" required>
+            </div>
+
+            <div class="form-row">
+                <label for="mark">Pazymys</label>
+                <input type="number" name="mark" id="mark" min="0" max="10" required>
+            </div>
+
+            <hr />
+
+            <div class="center-list">
+                <input type="submit" value="Siųsti">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

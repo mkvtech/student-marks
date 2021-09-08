@@ -1,0 +1,60 @@
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+table {
+    border: 1px solid transparent;
+    border-collapse: collapse;
+}
+
+thead {
+    border-radius: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(0, rgba(29,131,72,1) 0%, #58D68D 100%);
+}
+
+thead > tr > th {
+    padding: 0 30px;
+    height: 60px;
+    color: white;
+    font-weight: normal;
+    font-family: "Varela Round";
+    font-size: 22px;
+}
+
+thead > tr > th:first-child {
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+thead > tr > :last-child {
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+#marks-table td {
+    text-align: center;
+    padding: 15px 30px;
+    font-family: "Varela Round";
+    border-bottom: 2px solid #ABB2B9;
+}
+
+#marks-table > tbody > tr:last-child > td {
+    border-bottom: none;
+}
+
+.table-row-index {
+    color: #909497;
+}
+
+.mark-positive {
+    color: #28B463;
+    font-weight: bold;
+}
+
+.mark-negative {
+    color: #E74C3C;
+    font-weight: bold;
+}
